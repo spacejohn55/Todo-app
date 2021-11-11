@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(100deg, hotpink, #04f9f2);
+  color: white;
+  min-height: 100vh;
+  font-family: "Irish Grover", cursive;
+}
+header {
+  font-size: 3.5rem;
+}
+header,
+.form {
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form input,
+.form button {
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  font-family: "Irish Grover", cursive;
+  font-size: 1.5rem;
+  display: flex;
+  border: none;
+  background: white;
+  border-radius: 20px;
+}
+.form button {
+  border: none;
+  margin-left: -2.5rem;
+  background: none;
+  font-size: 2.5rem;
+  color: black;
+  transition: all 0.25 ease;
+  padding: 0 0.5rem 0 0.5rem;
+  position:relative;
+}
+.form button:hover {
+  border-radius: 20px;
+  background: linear-gradient(60deg, #04f9f2, hotpink);
+  color: white;
+  transition: all 0.25 ease;
+}
+.todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo-input{
+    min-width: 15%;
+    padding-right:2.8rem !important;
+}
+.todo-list {
+  list-style: none;
+  min-width: 30%;
+}
+.todo {
+  background: white;
+  margin: 0.5rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.25 ease;
+  border-radius: 20px;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.delete-btn,
+.complete-btn,
+.alarm-btn {
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  background: white;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.complete-btn {
+  background: #04f9f2;
+}
+.complete-btn:hover {
+  background: #00fff7;
+}
+.alarm-btn {
+  background: #ffee00;
+  border-radius: 0;
+}
+.alarm-btn:hover {
+  background: #ffd000;
+}
+.delete-btn {
+  background: hotpink;
+  border-radius: 0 20px 20px 0;
+}
+.delete-btn:hover {
+  background: rgb(250, 127, 188);
+  border-radius: 0 20px 20px 0;
+}
+.todo-item {
+  padding: 0.5rem 0.5rem;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+select {
+  padding-left: 5px;
+  color: black;
+  width: 10rem;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.disappear {
+  display: none;
+}
